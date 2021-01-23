@@ -1,0 +1,24 @@
+:root {
+
+  // fonts
+  --font-main: 'Poppins', sans-serif;
+
+  // colors
+  --color-main: #000;
+  --color-bg: #fff;
+  --border: #000;
+
+  // common
+  --container: 1170px;
+
+  --padding: 16px;
+  @include media(minMD) {
+    --padding: 30px;
+  }
+
+  @include media(minLG) {
+    --padding: 60px;
+  }
+
+  --transition: .2s;
+}

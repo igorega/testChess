@@ -1,0 +1,71 @@
+$transition: .2s ease-in-out;
+
+.btn {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  transition: color $transition;
+
+  @include media(minLG) {
+    width: 100%;
+  }
+
+  &::before,
+  &::after {
+    z-index: -1;
+    content: '';
+    @include cover;
+    background-color: var(--color-main);
+    transition: transform $transition;
+  }
+
+  &::before {
+    transform: translateY(-100%);
+  }
+
+  &::after {
+    transform: translateY(100%);
+  }
+
+  &:hover {
+    color: var(--color-bg);
+
+    &::before {
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      transform: translateY(50%);
+    }
+  }
+}
+
+.underline {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-main);
+    transform-origin: left;
+    transform: rotateY(0);
+    transition: transform $transition;
+  }
+
+  &:hover {
+    &::after {
+      transform-origin: right;
+      transform: rotateY(90deg);
+    }
+  }
+}

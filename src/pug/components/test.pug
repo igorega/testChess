@@ -1,0 +1,49 @@
+section.test
+  .container
+
+    .switch-wrapper
+      label.switch
+        input#triggerChecked.js-darkmodeToggle(type='checkbox')
+        span.change.round
+
+    .test__grid
+      // item
+      .test__item
+        .test__players
+
+          .checkbox
+            input#one(type='checkbox' checked='')
+            label(for='one')
+              span
+              | Player 1
+
+          .test__players-box
+
+          .checkbox
+            input#two(type='checkbox')
+            label(for='two')
+              span
+              | Player 2
+      // item
+      .test__item
+        .test__game
+
+          // item
+          .test__game-item
+            p.test__game-title
+              strong Play Chess
+
+            .test__game-columns
+              .test__game-col
+                button.js-new-game New Game
+              .test__game-col
+                button.underline.js-archive Archive
+
+          // item
+          .test__game-item.test__game-item--content
+            #new-game.test__game-content New Game
+            #archive.test__game-content.is-show Archive Games
+
+          // item
+          .test__game-item
+            button.btn New Game

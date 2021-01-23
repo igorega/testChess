@@ -1,0 +1,41 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "test",
+  "license": "MIT",
+  "repository": "",
+  "author": {
+    "name": "Igor",
+    "email": "igorega@gmail.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "test"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-gulp": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "imagemin-svgo": "^8.0.0",
+    "node-sass": "^4.13.1",
+    "terser-webpack-plugin": "^2.3.4",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

@@ -1,0 +1,42 @@
+@mixin media($point) {
+
+  // max-width
+  @if $point == maxXXL {
+    @media (max-width: 1599.98px) { @content; }
+  }
+  @else if $point == maxXL {
+    @media (max-width: 1199.98px) { @content; }
+  }
+  @else if $point == maxLG {
+    @media (max-width: 991.98px) { @content; }
+  }
+  @else if $point == maxMD {
+    @media (max-width: 767.98px) { @content; }
+  }
+  @else if $point == maxSM {
+    @media (max-width: 575.98px) { @content; }
+  }
+  @else if $point == maxXS {
+    @media (max-width: 374.98px) { @content; }
+  }
+
+  // min-width
+  @if $point == minXXL {
+    @media (min-width: 1600px) { @content; }
+  }
+  @else if $point == minXL {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == minLG {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == minMD {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == minSM {
+    @media (min-width: 576px) { @content; }
+  }
+  @else if $point == minXS {
+    @media (min-width: 375px) { @content; }
+  }
+}

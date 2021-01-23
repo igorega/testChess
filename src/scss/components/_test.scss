@@ -1,0 +1,79 @@
+.test {
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__grid {
+    align-items: center;
+
+    @include media(minLG) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+  }
+
+  &__players {
+    &-box {
+      width: 100%;
+      height: 400px;
+      border: 2px solid var(--border);
+    }
+  }
+
+  &__game {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+    border: 2px solid var(--border);
+    border-radius: 80px;
+    font-size: 18px;
+
+    @include media(minLG) {
+      padding: 30px 50px;
+      font-size: 24px;
+    }
+
+    &-item {
+      width: 100%;
+      text-align: center;
+
+      &--content {
+        height: 100%;
+        @include centerFlex;
+        padding: 16px;
+
+        @include media(minLG) {
+          padding: 30px;
+        }
+      }
+    }
+
+    &-columns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    &-col {
+      flex: 1;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      white-space: nowrap;
+
+      &:not(:last-child) {
+        border-right: 3px solid var(--border);
+      }
+    }
+
+    &-content {
+      &:not(.is-show) {
+        display: none;
+      }
+    }
+  }
+}
