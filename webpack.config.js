@@ -1,16 +1,9 @@
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    })
-  ],
   module: {
     rules: [
       {
@@ -26,6 +19,7 @@ module.exports = {
     ],
   },
   optimization: {
+    minimize: true,
     minimizer: [
       new TerserPlugin({
         sourceMap: true,
@@ -33,6 +27,13 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
   },
+  // plugins: [
+  //   new webpack.ProvidePlugin({
+  //     $: 'jquery',
+  //     jQuery: 'jquery',
+  //     'window.jQuery': 'jquery',
+  //   }),
+  // ],
 };

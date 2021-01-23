@@ -35,7 +35,5 @@
     "terser-webpack-plugin": "^2.3.4",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {
-    "jquery": "^3.5.1"
-  }
+  "dependencies": {}
 }

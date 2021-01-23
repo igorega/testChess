@@ -1,0 +1,29 @@
+/*! ./components/darkMode */
+
+/*! ./components/tab */
+
+/*! C:\projects\сhess\src\js\components\darkMode.js */
+
+/*! C:\projects\сhess\src\js\components\tab.js */
+
+/*! C:\projects\сhess\src\js\main.js */
+
+/*! no exports provided */
+
+/*! no static exports found */
+
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+
+/*!**********************************!*\
+  !*** ./src/js/components/tab.js ***!
+  \**********************************/
+
+/*!***************************************!*\
+  !*** ./src/js/components/darkMode.js ***!
+  \***************************************/
+
+/*!*****************************************************************************************!*\
+  !*** multi ./src/js/main.js ./src/js/components/darkMode.js ./src/js/components/tab.js ***!
+  \*****************************************************************************************/
